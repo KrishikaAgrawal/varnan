@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+/* Import Google Fonts first */
+@import url("https://fonts.googleapis.com/css2?family=Halant:wght@400;500;600;700&family=Instrument+Sans:wght@400;500;600;700&family=Island+Moments&display=swap");
+
+/* Define font variables */
+@layer base {
+  :root {
+    --font-instrument: "Instrument Sans", sans-serif;
+    --font-island: "Island Moments", cursive;
+    --font-halant: "Halant", serif;
+  }
+
+  body {
+    font-family: var(--font-instrument);
+    background-image: url("/src/assets/BG.png");
+  }
+}
+
+/* Optional helpers (so you can use font-halant / font-island classes) */
+@layer utilities {
+  .font-instrument {
+    font-family: var(--font-instrument);
+  }
+  .font-island {
+    font-family: var(--font-island);
+  }
+  .font-halant {
+    font-family: var(--font-halant);
+  }
+}
