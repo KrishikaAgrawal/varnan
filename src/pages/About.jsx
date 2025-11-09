@@ -1,4 +1,4 @@
-import image1 from "../assets/about/about.png";
+import image1 from "../assets/About/about.png";
 
 const stats = [
   { number: "85+", label: "Projects" },
