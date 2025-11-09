@@ -30,19 +30,30 @@ const Services = () => {
 
       {/* Services images */}
       <div className="mt-16 flex gap-5 md:h-88 flex-col md:flex-row items-center justify-center">
-        <Link to="/service1" className="transition-transform hover:scale-105">
-          <img src={service1} alt="Service 1" className="w-64 md:w-80 object-contain" />
+        <Link to="/services" className="transition-transform hover:scale-105">
+          <img
+            src={service1}
+            alt="Service 1"
+            className="w-64 md:w-80 object-contain"
+          />
         </Link>
-        <Link to="/service2" className="transition-transform hover:scale-105">
-          <img src={service2} alt="Service 2" className="w-64 md:w-80 object-contain" />
+        <Link to="/services" className="transition-transform hover:scale-105">
+          <img
+            src={service2}
+            alt="Service 2"
+            className="w-64 md:w-80 object-contain"
+          />
         </Link>
-        <Link to="/service3" className="transition-transform hover:scale-105">
-          <img src={service3} alt="Service 3" className="w-64 md:w-80 object-contain" />
+        <Link to="/services" className="transition-transform hover:scale-105">
+          <img
+            src={service3}
+            alt="Service 3"
+            className="w-64 md:w-80 object-contain"
+          />
         </Link>
       </div>
     </section>
   );
 };
-
 
 export default Services;

@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import logo from "../assets/navbar/logo.png";
 import menuOpen from "../assets/navbar/menu-open.png";
 import menuClose from "../assets/navbar/menu-close.png";
+import { MdOutlineMail } from "react-icons/md";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,7 +14,7 @@ const Navbar = () => {
     { name: "Team", path: "/team" },
     { name: "Services", path: "/services" },
     { name: "Portfolio", path: "/portfolio" },
-    { name: "Contact", path: "/contact" },
+    // { name: "Contact", path: "/contact" },
   ];
   useEffect(() => {
     const handleResize = () => setIsMobile(window.innerWidth < 768);
@@ -50,12 +51,21 @@ const Navbar = () => {
                 <Link
                   to={link.path}
                   onClick={() => setIsOpen(false)}
-                  className="hover:text-yellow-500 transition"
+                  className="hover:text-[#F15D2B] transition"
                 >
                   {link.name}
                 </Link>
               </li>
             ))}
+            <li>
+              <Link to={"/contact"} onClick={() => setIsOpen(false)}>
+                {" "}
+                <button className="bg-[#F15D2B] text-white py-3 px-6 text-sm rounded-4xl w-fit transition hover:opacity-60">
+                  Let's Talk
+                  <MdOutlineMail className="inline-block ml-2 text-lg" />
+                </button>
+              </Link>
+            </li>
           </ul>
         </div>
         {/* Toggle */}

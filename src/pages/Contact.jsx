@@ -162,11 +162,24 @@ const Contact = () => {
           </p>
         )}
 
-        <div className="w-full flex gap-2 item-center justify-center text-[#F15D2B] font-halant font-bold text-sm">
-          <p>vernita@varnanfilms.co.in</p>
-          <div className="border border-[#F15D2B]"></div>
-          <p>+91 98736 84567</p>
-        </div>
+        <div className="w-full flex gap-2 items-center justify-center text-[#F15D2B] font-halant font-bold text-sm">
+  <a
+    href="mailto:vernita@varnanfilms.co.in"
+    className="hover:underline hover:opacity-80 transition"
+  >
+    vernita@varnanfilms.co.in
+  </a>
+
+  <div className="border border-[#F15D2B] h-4"></div>
+
+  <a
+    href="tel:+919873684567"
+    className="hover:underline hover:opacity-80 transition"
+  >
+    +91 98736 84567
+  </a>
+</div>
+
       </div>
     </section>
   );
