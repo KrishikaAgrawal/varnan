@@ -1,6 +1,6 @@
 import { useState } from "react";
-import image_down from "../assets/Contact/image_down.png";
-import image_up from "../assets/Contact/image_up.png";
+import image_down from "../assets/contact/image_down.png";
+import image_up from "../assets/contact/image_up.png";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
